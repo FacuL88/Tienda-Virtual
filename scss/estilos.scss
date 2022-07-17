@@ -17,10 +17,11 @@
       display: flex;
   
       a {
-       margin: 10px;
-       padding: 10px;
-       text-decoration: none;
-     }
+        font-size: large;
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+      }
   
     }
   }
@@ -53,24 +54,19 @@
   }
  
   
-  #carritoContenedor{ 
-    border: 2px solid black;
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
+.modal-contenedor {
+  display: grid;
+  width: 55%;
+  text-align: center;
 
-    .productoEnCarrito {
-      border-bottom: 2px solid black;
-      padding: 10px;
-    }
+  .modal-carrito {
+    display: grid;
   
     img {
-     width: 35px;
-   }
+      width: 30px;
+    }
   }
+}
     
 
   #contenidoFooter {

@@ -12,6 +12,7 @@ body {
   #contenidoHeader .enlaces {
     display: flex; }
     #contenidoHeader .enlaces a {
+      font-size: large;
       margin: 10px;
       padding: 10px;
       text-decoration: none; }
@@ -31,19 +32,14 @@ body {
     #contenidoMain .producto img {
       width: 100%; }
 
-#carritoContenedor {
-  border: 2px solid black;
-  margin: 20px;
-  padding: 10px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+.modal-contenedor {
+  display: grid;
+  width: 55%;
   text-align: center; }
-  #carritoContenedor .productoEnCarrito {
-    border-bottom: 2px solid black;
-    padding: 10px; }
-  #carritoContenedor img {
-    width: 35px; }
+  .modal-contenedor .modal-carrito {
+    display: grid; }
+    .modal-contenedor .modal-carrito img {
+      width: 30px; }
 
 #contenidoFooter {
   border-top: 2px solid black; }
