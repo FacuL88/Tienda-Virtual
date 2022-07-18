@@ -19,6 +19,13 @@ contenidoHeader.appendChild(div);
 
 let carrito = []
 
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+        actualizarCarrito ();
+    };
+});
+
 stockProductos.forEach((producto) => {
     const div = document.createElement('div');
     div.classList.add('producto')
@@ -67,5 +74,7 @@ const actualizarCarrito = () => {
         `
 
         carritoContenedor.appendChild(div);
+
+        localStorage.setItem('carrito', JSON.stringify(carrito)); 
     });
 }
